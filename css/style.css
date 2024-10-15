@@ -14,6 +14,12 @@
   padding: 0;
 }
 
+html {
+  overflow-x: hidden;
+  height: 100vh;
+  width: 100vw;
+} 
+
 /* Intro To The Website */
 .bg {
   width: calc(100vw + 60px);
@@ -43,7 +49,6 @@ body {
   -webkit-font-smoothing: antialiased;
   background: var(--light-color);
   color: var(--text-color);
-  overflow-x: hidden;
 }
 
 ul {
@@ -714,14 +719,14 @@ img {
     height: 71vh;
     top: 0;
     left: auto;
-    right: 5vw;  
+    right: 10vw;  
   }
 
   .showcase-content {
 
     top:0;
     left: auto;
-    right: 5vw;  
+    right: 10vw;  
     margin-top: 0;
     
   }
@@ -800,6 +805,11 @@ img {
     left: 45%;
 
   }
+
+.carousel {
+  width: 85%;
+}
+
 }
 
 @media(max-width: 679px) {
@@ -812,7 +822,7 @@ img {
 @media(max-width: 671px) {
 /* Über uns */
 .carousel {
-  margin-left: 15%;
+  margin-left: 5%;
   }
 .btn-carousel { 
   width: 49%;
