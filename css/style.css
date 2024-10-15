@@ -14,11 +14,36 @@
   padding: 0;
 }
 
+/* Intro To The Website */
+.bg {
+  width: calc(100vw + 60px);
+  height: calc(100vh + 60px);
+  z-index: -1;
+  filter: blur(0px);
+}
+
+
+.loading-text {
+  font-size: 50px;
+  color: #fff;
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  text-align: center;
+}
+
+
+
+
 body {
   font-family: 'Arial', sans-serif;
   -webkit-font-smoothing: antialiased;
   background: var(--light-color);
   color: var(--text-color);
+  overflow-x: hidden;
 }
 
 ul {
@@ -364,7 +389,7 @@ img {
   border: none;
   padding: 0.5rem;
   cursor: pointer;
-  width: 49.663%;
+  width: 49.66%;
 }
 
 .btn-carousel:hover {
@@ -388,6 +413,7 @@ img {
   align-items: center;
   text-align: center;
   margin-top: 2rem;
+  max-width: 94vw;
 }
 #tab-2-content .tab-2-content-bottom > .tab-2-correction-01 {
   max-width: 100%;
@@ -570,46 +596,6 @@ img {
     }
 }
 
-@media(max-width: 679px) {
-    /* Über uns */
-    .btn-carousel { 
-      width: 49.5%;
-    }
-   
-}
-
-@media(max-width: 556px ) {
-    /* Über uns */
-    .btn-carousel { 
-      width: 49.4%;
-    }
-   
-}
-
-@media(max-width: 473px ) {
-    /* Über uns */
-    .btn-carousel { 
-      width: 49.3%;
-    }
-   
-}
-
-@media(max-width: 415px  ) {
-    /* Über uns */
-    .btn-carousel { 
-      width: 49.2%;
-    }
-   
-}
-
-@media(max-width: 372px  ) {
-    /* Über uns */
-    .btn-carousel { 
-      width: 49.1%;
-    }
-   
-}
-
 @media(max-width:   1450px  ) {
     /* Über uns */
     #tab-2-content .tab-2-content-bottom {
@@ -618,11 +604,13 @@ img {
     }
 
     img {
-      height: 550px;    
+      height: 570px;    
     }
     
     .carousel {    
-      height: 580px;
+      width: 70%;
+      height: 600px;
+      margin-left: 15%;
     }
 
 }
@@ -702,9 +690,17 @@ img {
   }
   .container-grid-two-columns {
     grid-template-columns: repeat(2, 1fr);
-}
+  }
 
 }
+
+@media(max-width: 840px) {
+  /* Über uns */
+  .btn-carousel { 
+    width: 49.4%;
+  }
+}
+
 
 @media(max-width: 767px) {
   .showcase-logo {
@@ -779,7 +775,11 @@ img {
   
   .carousel { 
     height: 330px;
-    margin-left: 1rem;
+    margin-left: 1.7rem;
+  }
+  .text-sm {
+    font-size: 1rem;
+    padding: 1rem 2rem;
   }
 
   /* Kontakt */
@@ -794,7 +794,71 @@ img {
   .container-content {
     padding: 0 1rem;
   }
+
+  .loading-text {
+    top: 32%;
+    left: 45%;
+
+  }
 }
+
+@media(max-width: 679px) {
+  /* Über uns */
+  .btn-carousel { 
+    width: 49.5%;
+  }
+ 
+}
+@media(max-width: 671px) {
+/* Über uns */
+.carousel {
+  margin-left: 15%;
+  }
+.btn-carousel { 
+  width: 49%;
+  }
+}
+
+@media(max-width: 557px ) {
+  /* Über uns */
+  .btn-carousel { 
+    width: 49.5%;
+  }
+ 
+}
+
+@media(max-width: 473px ) {
+  /* Über uns */
+  .btn-carousel { 
+    width: 49.3%;
+  }
+ 
+}
+
+@media(max-width: 431px ) {
+  /* Über uns */
+  .btn-carousel { 
+    width: 49.1%;
+  }
+ 
+}
+
+@media(max-width: 391px  ) {
+  /* Über uns */
+  .btn-carousel { 
+    width: 49.05%;
+  }
+ 
+}
+
+@media(max-width: 372px  ) {
+  /* Über uns */
+  .btn-carousel { 
+    width: 49.1%;
+  }
+ 
+}
+
 /* Not working */
 @media(max-width: 370px) {
   .not-working-01 {
