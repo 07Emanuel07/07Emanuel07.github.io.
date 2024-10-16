@@ -324,7 +324,6 @@ h2.service-hd {
 
 
 .btn-arrow {  
-  position: relative;
   background-color: var(--light-color);
   color: var(--primary-color);
   padding: 10px;
@@ -334,12 +333,13 @@ h2.service-hd {
   height: 20px;
   width: 20px;
   z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .btn-arrow i {
-  position: absolute;
-  top: 20%;
-  left: 0;
+  padding-right: 2.5px;
   z-index: 1;
 }
 
