@@ -594,6 +594,20 @@ img {
   margin-left: 0.2rem;
 }
 
+
+
+
+
+@media(min-width: 1900px  ) {
+    /* Über uns */
+    .carousel {
+      width: 60%;
+      margin-left: 20%;
+    }
+    .btn-carousel { 
+      width: 49.5%;
+    }
+}
 @media(max-width: 1520px) {
     /* Über uns */
     .btn-carousel { 
