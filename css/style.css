@@ -945,6 +945,12 @@ img {
   .btn-carousel { 
     width: 49.3%;
   }
+
+  #tab-2-content {
+    margin-left: 2rem;
+    max-width: 90vw; 
+  
+  }
  
 }
 
