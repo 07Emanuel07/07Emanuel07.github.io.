@@ -3,7 +3,7 @@
   /* For bg -->  (Light gray) #FAFAFA */
   /* For accents, buttons etc. --> (Teal) #31d2c2  */
   --primary-color: #31d2c2;
-  --light-color: #F5F5DD;
+  --light-color: #fafafa;
   --heading-color: #004D4D;
   --text-color: #333;
 }
@@ -193,7 +193,7 @@ button:hover {
 .tabs {
   background: var(--light-color);
   padding-top: 1rem;
-  border-bottom: 3px solid #FAFBEA;
+  border-bottom: 3px solid #fff;
 }
 
 .tabs .container {
@@ -394,7 +394,7 @@ img {
   border: none;
   padding: 0.5rem;
   cursor: pointer;
-  width: 49.66%;
+  width: 49.64%;
 }
 
 .btn-carousel:hover {
@@ -405,6 +405,12 @@ img {
   outline: none;
 }
 
+/* Tab-2-Content - About */
+#tab-2-content {
+  max-width: 90vw;
+
+
+}
 #tab-2-content .tab-2-content-top {
   display: flex;
   justify-content: center;
@@ -420,9 +426,53 @@ img {
   margin-top: 2rem;
   max-width: 94vw;
 }
+
+
 #tab-2-content .tab-2-content-bottom > .tab-2-correction-01 {
   max-width: 100%;
 }
+
+/* Unsere Fachärzte */
+
+.tab-2-content-top-2 h2 {
+  margin-top: 3.5rem;
+  margin-bottom: .5rem  ;
+}
+#doc-container .column .column-2 p {
+  padding: 0 5px;
+  text-align: justify;
+  width: 100%;
+}
+
+.resume_img {
+  width: 640px;
+  height: 480px;
+  background: url('../resources/usable/Docs.jpg') no-repeat center center/cover;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+#doc-container {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  margin: 0 15%;
+
+}
+
+
+#doc-container h2, h4{
+  color: var(--text-color);
+
+}
+
+#doc-container h4{
+  font-size: .8rem;
+  font-style: italic;
+
+}
+
 
 /* Tab-3 Content */
 .tab-content-item  {
@@ -608,6 +658,14 @@ img {
       width: 49.5%;
     }
 }
+@media(max-width: 1719px) {
+    /* Über uns */
+    .resume_img {
+      height: 350px;
+      width: 470px ;
+    }
+
+}
 @media(max-width: 1520px) {
     /* Über uns */
     .btn-carousel { 
@@ -621,6 +679,15 @@ img {
       grid-template-columns: repeat(1, 1fr);   
       margin-top: 1.5rem;
     }
+    #tab-2-content #doc-container.tab-2-content-bottom {
+      display: flex;
+      flex-direction: column-reverse; 
+      /* margin-top: 1.5rem; */
+    }
+
+    #tab-2-content #doc-container.tab-2-content-bottom .column-2 {
+      margin-top: 1.5rem;
+    }
 
     img {
       height: 570px;    
@@ -631,11 +698,22 @@ img {
       height: 600px;
       margin-left: 15%;
     }
+    .flex-columns .column,
+    .flex-grid .column {
+    flex: 50%;
+    max-width: 100%;
+  }
 
 }
 
   
+@media(max-width:1200px) {
 
+  .flex-columns .column,
+  .flex-grid .column {
+    flex: 100%;
+  }
+}
 
 @media(max-width: 1100px) {
   .showcase {
@@ -717,6 +795,11 @@ img {
   /* Über uns */
   .btn-carousel { 
     width: 49.4%;
+  }
+  .flex-columns .column,
+  .flex-grid .column {
+    flex: 100%;
+    max-width: 100%;
   }
 }
 
@@ -848,6 +931,11 @@ img {
   .btn-carousel { 
     width: 49.5%;
   }
+
+  .resume_img {
+    height: 225px;
+    width: 300px ;
+  }
  
 }
 
@@ -885,6 +973,10 @@ img {
 
 /* Not working */
 @media(max-width: 370px) {
+body {
+  display: none;
+}
+
   .not-working-01 {
       display: none;
   }
