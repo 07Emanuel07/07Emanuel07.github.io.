@@ -540,12 +540,18 @@ img {
   justify-content: center;
   align-items: center;
   text-align: center;
+  gap: 10%  ;
 }
 
 .footer,
 .footer a {
   color: #999;
   font-size: 0.9rem;
+}
+
+.footer a:hover {
+  color: var(--primary-color);
+ 
 }
 
 .footer p {
